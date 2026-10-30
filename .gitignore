@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Node modules
+node_modules/
+**/node_modules/
+server/database/server_local.js
+server/database/package-lock.json
+submission_answers.md
+
+

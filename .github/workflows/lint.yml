@@ -8,6 +8,7 @@ on:
 
 jobs:
   Lint-Python-Files:
+    name: Lint Python Files
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -31,6 +32,7 @@ jobs:
           find . -name "*.py" -not -path "./.git/*" | xargs pylint --disable=all --enable=E || true
 
   Lint-JavaScript-Files:
+    name: Lint JavaScript Files
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
